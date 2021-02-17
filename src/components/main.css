@@ -13,3 +13,31 @@
 .sideicon{
     flex: .1;
 }
+.new-button{
+    box-shadow: 1px 1px 13px -6px black;
+    margin: 10px;
+    padding: 8px;
+    border-radius: 200px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebarOptions{
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    transition: .2s all ease-in;
+    cursor: pointer;
+}
+.sidebarOptions:hover{
+    color: rgb(62, 116, 241);
+    background-color: rgb(217, 228, 255);
+}
+.sidebarOptionsText{
+    margin-left:10px ;
+
+}

@@ -1,4 +1,4 @@
-import { SignalCellularNull } from '@material-ui/icons'
+import { CloudQueueOutlined, DeleteForever, DeleteOutline, InsertDriveFile, QueryBuilder, SignalCellularNull, StarBorder } from '@material-ui/icons'
 import React from 'react'
 import SidebarOption from './SidebarOption'
 import GroupIcon from '@material-ui/icons/Group';
@@ -8,15 +8,16 @@ function SideBar() {
     return (
         <div className='sidebar'>
             <div className='new-button'>
-                <AddIcon/><h3>NEW</h3>
+                <AddIcon/><h3>New</h3>
             </div>
-            <SidebarOption icon={<GroupIcon/>} text='My Drive'/>
+            <SidebarOption icon={<InsertDriveFile/>} text='My Drive'/>
             <SidebarOption icon={<GroupIcon/>} text='Shared with me'/>
-            <SidebarOption icon={<GroupIcon/>} text='Recents'/>
-            <SidebarOption icon={<GroupIcon/>} text='Starred'/>
-            <SidebarOption icon={<GroupIcon/>} text='Trash'/>
+            <SidebarOption icon={<QueryBuilder/>} text='Recents'/>
+            <SidebarOption icon={<StarBorder/>} text='Starred'/>
+            <SidebarOption icon={<DeleteOutline/>} text='Trash'/>
+            <br/>
             <hr/>
-            <SidebarOption icon={<GroupIcon/>} text='Storage'/>
+            <SidebarOption icon={<CloudQueueOutlined/>} text='Storage'/>
         </div>
     )
 }
