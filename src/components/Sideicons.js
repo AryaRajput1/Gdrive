@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Home() {
+function Sideicons() {
     return (
         <div>
-            home
+            sideicons
         </div>
     )
 }
 
-export default Home
+export default Sideicons
