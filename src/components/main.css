@@ -1,0 +1,15 @@
+.main{
+    display: flex;
+    height: 89vh;
+}
+.sidebar{
+    flex: .2;
+    border-right: 1px solid black;
+}
+.home{
+    flex: .7;
+    border-right: 1px solid black;
+}
+.sideicon{
+    flex: .1;
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sideicons() {
     return (
-        <div>
+        <div className='sideicon'>
             sideicons
         </div>
     )

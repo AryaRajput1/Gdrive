@@ -3,9 +3,10 @@ import React from 'react'
 import SidebarOption from './SidebarOption'
 import GroupIcon from '@material-ui/icons/Group';
 import AddIcon from '@material-ui/icons/Add';
+import './main.css';
 function SideBar() {
     return (
-        <div>
+        <div className='sidebar'>
             <div className='new-button'>
                 <AddIcon/><h3>NEW</h3>
             </div>
