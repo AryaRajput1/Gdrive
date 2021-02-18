@@ -2,14 +2,12 @@ import { CloudQueueOutlined, DeleteForever, DeleteOutline, InsertDriveFile, Quer
 import React from 'react'
 import SidebarOption from './SidebarOption'
 import GroupIcon from '@material-ui/icons/Group';
-import AddIcon from '@material-ui/icons/Add';
 import './main.css';
+import AddNewFile from './AddNewFile';
 function SideBar() {
     return (
         <div className='sidebar'>
-            <div className='new-button'>
-                <AddIcon/><h3>New</h3>
-            </div>
+            <AddNewFile/>
             <SidebarOption icon={<InsertDriveFile/>} text='My Drive'/>
             <SidebarOption icon={<GroupIcon/>} text='Shared with me'/>
             <SidebarOption icon={<QueryBuilder/>} text='Recents'/>
