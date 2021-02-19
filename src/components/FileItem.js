@@ -1,25 +1,25 @@
 import React from 'react'
 
-function FileItem({name,date,size,url}) {
-    const filename=`${date.toDate().getDate()} ${date.toDate.getMonth()}`;
-    const filesize=(sizeInBytes)=>{
-        let i=-1;
-        const byteunits=['kb','mb','gb'];
-        do{
-            sizeInBytes=sizeInBytes/1024;
+function FileItem({name,date,size,url,num}) {
+    const filedate=`${date.toDate().getDate()} `;
+    const filesize=(size)=>{
+        let i=0;
+        const byteunits=['b','kb','mb','gb'];
+        while(size>1024){
+            size/=1024;
             i++;
-        }while(sizeInBytes>1024)
-return Math.max(sizeInBytes,0.1).toFixed(1)+byteunits[i];
+        }
+return size.toFixed(1)+byteunits[i];
     };
     return (
-        <div>
+        
             <div className='files'> 
-                <p>No.</p>
+                <p>{num}</p>
                 <a href={url}><p>{name}</p></a>
-                    <p>{date}</p>
+                    <p>{filedate}</p>
                     <p>{filesize(size)}</p>
                 </div>
-        </div>
+        
     )
 }
 

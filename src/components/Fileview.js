@@ -2,27 +2,32 @@ import React,{useEffect,useState} from 'react'
 import './main.css'
 import auth,{db,storage} from '../firebasefile'
 import FileItem from './FileItem';
+import Filecard from './Filecard';
 
 function Fileview() {
     const [files, setfiles] = useState(null);
     useEffect(() => {
-        
-            db.collection('files').get().then(snapshot=>{
-                snapshot.docs.map(doc=>{
-              setfiles({
+        if(db.collection('myfiles')){
+            db.collection('myfiles').get().then(snapshot=>{
+                setfiles( snapshot.docs.map(doc=>(
+              {
                   id:doc.id,
                   item:doc.data()
-              })
-                })
+              }
+                )))
             })
-        
+        }
         
     }, [])
     return (
         <div class='Fileview'>
             <h4>Files</h4>
             <div className='filecard'>
-
+            
+                {
+                        files && files.map(({id,item}) => <Filecard key={id}name={item.name} url={item.url}/>
+                    )
+                }
 </div>
 <hr/>
             <div className='fileList'>
@@ -34,7 +39,7 @@ function Fileview() {
                     <h3>Size</h3>
                 </div>
                 {
-                    files && files.map((id,item) => <FileItem key={id} name={item.name} date={item.timestamp} url={item.url} size={item.size}/>
+                        files && files.map(({id,item},index) => <FileItem  num={index+1} key={id} name={item.name} date={item.timestamp} url={item.url} size={item.size}/>
                     )
                 }
                 
