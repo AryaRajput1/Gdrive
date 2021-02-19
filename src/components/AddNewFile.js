@@ -29,7 +29,8 @@ export default function AddNewFile() {
                     timestamp
                     :firebase.firestore.FieldValue.serverTimestamp(),
                     url:url,
-                    name:file.name
+                    name:file.name,
+                    size:snapshot._delegate.bytesTransferred,
                 });
                 setuploading(false);
                 setopen(false);

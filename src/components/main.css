@@ -42,3 +42,11 @@
     margin-left:10px ;
 
 }
+
+/* FILE SECTION */
+.files{
+    display: grid;
+    grid-template-columns: .5fr 2fr 1fr 1fr;
+    margin: 20px;
+
+}

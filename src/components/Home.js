@@ -1,5 +1,5 @@
 import React from 'react'
-import Fileview from './css/Fileview'
+import Fileview from './Fileview'
 
 function Home() {
     return (
