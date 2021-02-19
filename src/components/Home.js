@@ -1,9 +1,10 @@
 import React from 'react'
+import Fileview from './css/Fileview'
 
 function Home() {
     return (
         <div className='home'>
-            home
+            <Fileview/>
         </div>
     )
 }
