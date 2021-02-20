@@ -1,8 +1,8 @@
 import React from 'react'
 import './main.css'
-function SidebarOption({icon,text}) {
+function SidebarOption({icon,text,first}) {
     return (
-        <div className='sidebarOptions'>
+        <div className='sidebarOptions'  >
           {icon}
          <span className='sidebarOptionsText'> {text}</span>  
         </div>

@@ -10,7 +10,7 @@ import Sideicons from './components/Sideicons';
 import './components/main.css'
 import auth,{provider} from './firebasefile';
 function App() {
-  const [user, setuser] = useState(null)
+  const [user, setuser] = useState('arya')
 const clickHandler=()=>{
   !user&& auth.signInWithPopup(provider).then(result=>{
     setuser(result.user);
