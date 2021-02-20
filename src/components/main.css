@@ -8,6 +8,7 @@
 }
 .home{
     flex: .7;
+
     border-right: 1px solid black;
 }
 .sideicon{
@@ -44,9 +45,30 @@
 }
 
 /* FILE SECTION */
+.F3w4ileview{
+    width: 100%;
+}
 .files{
     display: grid;
     grid-template-columns: .5fr 2fr 1fr 1fr;
     margin: 20px;
 
+}
+
+.filecard{
+    display: flex;
+    padding: 10px;
+
+}
+
+.card{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    
+}
+.card img{
+    width: 100%;
+    height:80%;
+    object-fit: contain;
 }

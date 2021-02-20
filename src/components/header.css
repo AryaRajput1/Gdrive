@@ -1,8 +1,11 @@
 .Header {
   display: flex;
+  position: sticky;
+  top: 0px;
   height: 11vh;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
   border-bottom: 1px grey solid;
 }
 .logo-sec,
