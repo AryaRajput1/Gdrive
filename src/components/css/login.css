@@ -12,17 +12,7 @@
     padding: 30px;
     box-shadow: 0px 0px 17px -8px black;
 }
-input{
-    margin-bottom: 30px;
-    height: 30px;
-    width: 100%;
-    padding:10px 5px;
-    border-radius: 8px;
-    border: 1px solid black;
-    font-size: 18px;
-    outline: none;
 
-}
 
 button{
     margin-top: 10px;

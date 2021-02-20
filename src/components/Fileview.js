@@ -18,7 +18,7 @@ function Fileview() {
             })
         }
         
-    }, [])
+    })
     return (
         <div class='Fileview'>
             <h4>Files</h4>

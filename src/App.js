@@ -8,10 +8,14 @@ import Header from './components/Header';
 import SideBar from './components/SideBar';
 import Sideicons from './components/Sideicons';
 import './components/main.css'
-import Login from './components/Login';
+import auth,{provider} from './firebasefile';
 function App() {
   const [user, setuser] = useState(null)
-
+const clickHandler=()=>{
+  !user&& auth.signInWithPopup(provider).then(result=>{
+    setuser(result.user);
+  })
+}
   return (
     <div className="App">
       {user? 
@@ -20,7 +24,9 @@ function App() {
         <SideBar/>
 <Home/>
 <Sideicons/></div></>
-:<Login/>}
+:<div className='Login'>
+<button onClick={clickHandler}>Login</button>
+</div>}
      
     </div>
   );

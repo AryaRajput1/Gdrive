@@ -15,4 +15,4 @@ const firebaseConfig = {
   const storage =firebase.storage();
 
   export default auth;
-  export {db , storage}
+  export {provider,db , storage}
