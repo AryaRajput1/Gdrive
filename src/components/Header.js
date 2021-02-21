@@ -4,7 +4,7 @@ import AppsIcon from '@material-ui/icons/Apps';
 import React from 'react'
 import './header.css'
 
-function Header() {
+function Header({image}) {
     return (
         <div className='Header'>
             <div className='logo-sec'>
@@ -20,7 +20,7 @@ function Header() {
             <IconButton> <HelpOutline/></IconButton>
             <IconButton><SettingsOutlined/></IconButton>
             <IconButton> <AppsIcon/></IconButton>
-                <Avatar/>
+                <Avatar src={image}/>
             </div>
 
         </div>

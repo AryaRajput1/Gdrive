@@ -10,16 +10,17 @@ import Sideicons from './components/Sideicons';
 import './components/main.css'
 import auth, { provider } from './firebasefile';
 function App() {
-  const [user, setuser] = useState('arya')
+  const [user, setuser] = useState()
   const clickHandler = () => {
     !user && auth.signInWithPopup(provider).then(result => {
+    
       setuser(result.user);
     })
   }
   return (
     <div className="App">
       {user ?
-        <> <Header />
+        <> <Header image={user.photoURL}/>
           <div className='main'>
             <SideBar />
             <Home />

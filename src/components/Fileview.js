@@ -6,6 +6,7 @@ import Filecard from './Filecard';
 
 function Fileview() {
     const [files, setfiles] = useState(null);
+    
     useEffect(() => {
         if(db.collection('myfiles')){
             db.collection('myfiles').get().then(snapshot=>{
@@ -15,7 +16,8 @@ function Fileview() {
                   item:doc.data()
               }
                 )))
-            })
+            });
+            
         }
         
     },[])
