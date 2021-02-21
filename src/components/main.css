@@ -2,17 +2,10 @@
     display: flex;
     height: 89vh;
 }
+/* sidebar css */
 .sidebar{
     flex: .2;
-    /* border-right: 1px solid black; */
-}
-.home{
-    flex: .7;
-padding-top: 10px;
-    border-right: 1px solid black;
-}
-.sideicon{
-    flex: .1;
+    
 }
 .new-button{
     cursor: pointer;
@@ -30,6 +23,7 @@ padding-top: 10px;
     box-shadow: 2px 2px 10px -3px black;
     
 }
+
 .sidebarOptions{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -48,8 +42,25 @@ padding-top: 10px;
     margin-left:10px ;
 
 }
+button {
+    height: 30px;
+    background-color: rgb(67, 67, 248);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin: 10px;
+  }
 
-/* FILE SECTION */
+/* main files section css */
+.home{
+    flex: .7;
+padding-top: 10px;
+    border-right: 1px solid black;
+}
 .Fileview{
     width: 100%;
 }
@@ -87,3 +98,7 @@ a{
     object-fit: contain;
 }
 
+/* sideicons extra css */
+.sideicon{
+    flex: .1;
+}

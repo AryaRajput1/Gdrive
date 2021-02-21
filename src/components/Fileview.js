@@ -31,7 +31,7 @@ function Fileview() {
 </div>
 <hr/>
             <div className='fileList'>
-            <p > Files List</p>
+            <h4 > Files List</h4>
                 <div className='files'> 
                 <h3>No.</h3>
                 <h3>Name</h3>

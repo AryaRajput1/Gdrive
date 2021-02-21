@@ -70,8 +70,8 @@ export default function AddNewFile() {
                 <h3>Uploading.....</h3>:<div className='modalupload'>
                 <input type='file' onChange={(e)=>filehandler(e)}/>
                 <br/>
-                <Button  onClick={()=>closeHandle()}>close</Button>
-                <Button onClick={()=>uploadHandle()}>upload</Button>
+                <button  onClick={()=>closeHandle()}>close</button>
+                <button onClick={()=>uploadHandle()}>upload</button>
                 </div>}
           
             </Modal>
